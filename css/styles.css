@@ -1,0 +1,56 @@
+:root{
+    --headingFont: 'Roboto Mono', monospace;
+    --paragraphFont: 'Mukta', sans-serif;
+    --whiteColor: rgb(250, 250, 250);
+    --blackColor: rgb(0, 0, 0);
+    --orangeColor: rgb(241, 144, 20);
+    --greyColor: rgb(200, 200, 200);
+    --yellowColor:rgb(244, 218, 85);
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon, 
+.carousel-indicators {
+  filter: invert(1);
+}
+.color{
+    background: var(--blackColor);
+}
+header .logo h2{
+    font-size: 2rem;
+    color: var(--whiteColor);
+}
+header .logo p{
+    font-size: 1.5rem;
+    color: var(--greyColor);
+}
+.nav_link{
+    color: var(--whiteColor);
+}
+.nav_link:hover{
+    color: var(--yellowColor);
+    transition: .3s;
+}
+.nav_link-act{
+    color: var(--blackColor);
+    background: var(--orangeColor);
+}
+body {
+    background: var(--whiteColor);
+    font-family: var(--paragraphFont); 
+}
+
+header .nav{
+    min-height: 8rem;
+    overflow: hidden;
+    background: var(--blackColor);
+}
+header .logo h2,
+header .logo p{
+    display: inline-block;
+}
+header .logo svg{
+    color: var(--orangeColor);
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0rem 0.5rem;
+}
