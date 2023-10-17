@@ -7,6 +7,9 @@
     --greyColor: rgb(200, 200, 200);
     --yellowColor:rgb(244, 218, 85);
 }
+.my_justify{
+    text-align: justify;
+}
 .carousel-control-next-icon,
 .carousel-control-prev-icon, 
 .carousel-indicators {
@@ -36,7 +39,7 @@ header .logo p{
 }
 body {
     background: var(--whiteColor);
-    font-family: var(--paragraphFont); 
+    font-family: var(--paragraphFont);
 }
 
 header .nav{
@@ -53,4 +56,27 @@ header .logo svg{
     width: 1.5rem;
     height: 1.5rem;
     margin: 0rem 0.5rem;
+}
+/*Main*/
+/*Portfolio*/
+main .portfolio h2{
+    color: var(--whiteColor);
+}
+.portfolio{
+    border-top: .5rem solid var(--orangeColor);
+    background: var(--blackColor);
+}
+.portfolio_text{
+    background: var(--whiteColor);
+}
+.portfolio .galery .portfolio_image{
+    max-height: 15rem;
+    overflow: hidden;
+}
+.portfolio .galery .portfolio_image a{
+    background: var(--yellowColor);
+    display: inline-block;
+}
+.portfolio .galery .portfolio_image:hover img{
+    opacity: .3;
 }
