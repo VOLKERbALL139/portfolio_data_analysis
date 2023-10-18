@@ -7,6 +7,29 @@
     --greyColor: rgb(200, 200, 200);
     --greyStrongColor: rgb(80, 80, 80);
     --yellowColor:rgb(244, 218, 85);
+    --blueColorIn: rgb(14, 23, 218);
+    --blueColorF:rgb( 58, 155, 227 );
+    --purpleColorG: rgb( 145, 10, 158);
+}
+.face{
+    color: var(--blueColorF);
+}
+.in{
+    color: var(--blueColorIn);
+}
+.git{
+    color: var(--purpleColorG);
+}
+.my_button{
+    background: var(--blackColor);
+    color: var(--orangeColor);
+    font-size: 1.5rem;
+    outline:none;
+}
+.my_button:hover{
+    color:var(--yellowColor);
+    transition: .3s;
+
 }
 .my_justify{
     text-align: justify;
@@ -19,11 +42,13 @@
 .color{
     background: var(--blackColor);
 }
-header .logo h2{
+header .logo h2,
+footer .logo h2{
     font-size: 2rem;
     color: var(--whiteColor);
 }
-header .logo p{
+header .logo p,
+footer .logo p{
     font-size: 1.5rem;
     color: var(--greyColor);
 }
@@ -43,16 +68,20 @@ body {
     font-family: var(--paragraphFont);
 }
 
-header .nav{
+header .nav,
+footer .nav{
     min-height: 8rem;
     overflow: hidden;
     background: var(--blackColor);
 }
 header .logo h2,
-header .logo p{
+header .logo p,
+footer .logo h2,
+footer .logo p{
     display: inline-block;
 }
-header .logo svg{
+header .logo svg,
+footer .logo svg{
     color: var(--orangeColor);
     width: 1.5rem;
     height: 1.5rem;
@@ -117,4 +146,22 @@ main .portfolio h2{
 	header .menu a {
 		width: 100%;
 	}
+}
+/* Social Meida */
+.social_media{
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+.social_media .icon_sm{
+    width: 6rem;
+    height: 6rem;
+    display: inline-block;
+    margin: .5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6rem;
+    transition: all .3s ease;
+}
+.social_media .icon_sm svg{
+    width: 5rem;
+    height: 5rem;
 }
