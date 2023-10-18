@@ -5,6 +5,7 @@
     --blackColor: rgb(0, 0, 0);
     --orangeColor: rgb(241, 144, 20);
     --greyColor: rgb(200, 200, 200);
+    --greyStrongColor: rgb(80, 80, 80);
     --yellowColor:rgb(244, 218, 85);
 }
 .my_justify{
@@ -70,7 +71,7 @@ main .portfolio h2{
     background: var(--whiteColor);
 }
 .portfolio .galery .portfolio_image{
-    max-height: 15rem;
+    /*max-height: 15rem;*/
     overflow: hidden;
 }
 .portfolio .galery .portfolio_image a{
@@ -79,4 +80,41 @@ main .portfolio h2{
 }
 .portfolio .galery .portfolio_image:hover img{
     opacity: .3;
+}
+.container .info h3, 
+.container .info h4{
+    color: var(--greyStrongColor);
+}
+
+/* MEDIAQUERIES */
+/* Dispositivo sm */
+@media screen and (max-width: 36rem){
+	.social_media .icon {
+		width: 3rem;
+		height: 3rem;
+	}
+
+	.social_media .icon svg {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+
+}
+
+/* Dispositivo md */
+@media screen and (max-width: 48rem){}
+
+/* Dispositivo lg */
+@media screen and (max-width: 62rem){
+	.logo {
+		height: 5rem;
+	}
+
+	header .menu {
+		min-height: 5rem;
+	}
+
+	header .menu a {
+		width: 100%;
+	}
 }
